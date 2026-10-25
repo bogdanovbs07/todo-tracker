@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таск-трекер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мои задачи <span id="task-counter">(0)</span></h1>
+        <button id="theme-toggle"> Тёмная тема</button>
+    </header>
+
+    <main>
+        <!-- Поиск и добавление -->
+        <section class="controls">
+            <input type="text" id="search-input" placeholder="Поиск по названию...">
+            <div class="add-task-row">
+                <input type="text" id="task-input" placeholder="Новая задача...">
+                <select id="priority-select">
+                    <option value="low">Низкий</option>
+                    <option value="medium" selected>Средний</option>
+                    <option value="high">Высокий</option>
+                </select>
+                <button id="add-btn">Добавить</button>
+            </div>
+        </section>
+
+        <!-- Список задач -->
+        <ul id="task-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
